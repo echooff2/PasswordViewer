@@ -1,0 +1,101 @@
+<!DOCKTYPE HTML>
+<html>
+<head>
+	<script src='popup.js'></script>
+	<style>
+		body
+		{
+			background-color: #fff;
+			width: 300px;
+			height: 100px;
+		}
+		#main
+		{
+			font-size: 20px;
+		}
+		.container 
+		{
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 12px;
+			cursor: pointer;
+			font-size: 22px;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		.container input 
+		{
+			position: absolute;
+			opacity: 0;
+			cursor: pointer;
+		}
+
+		.checkmark 
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 25px;
+			width: 25px;
+			background-color: #eee;
+			outline: 2px solid #000;
+		}
+
+		.container:hover input ~ .checkmark 
+		{
+			background-color: #ccc;
+		}
+
+		.container input:checked ~ .checkmark 
+		{
+			background-color: #2196F3;
+		}
+
+		.checkmark:after 
+		{
+			content: "";
+			position: absolute;
+			display: none;
+		}
+
+		.container input:checked ~ .checkmark:after 
+		{
+			display: block;
+		}
+
+		.container .checkmark:after
+		{
+			left: 9px;
+			top: 5px;
+			width: 5px;
+			height: 10px;
+			border: solid white;
+			border-width: 0 3px 3px 0;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<h1 id="nameLabel" style="text-align: center; font-size:40px; font-weight: bold;";> Password Viewer </h1>
+	<label id="autoUnhashLabel" class="container">
+		<input id="cb" type="checkbox">
+		<span id='spanc' class="checkmark"></span>
+	</label>
+	
+	<!--<script>
+		var checkb = document.getElementById('checkbox');
+		checkb.onchange = function()
+		{
+			console.log(checkb.checked);
+		}
+	</script>-->
+</body>
+</html>
