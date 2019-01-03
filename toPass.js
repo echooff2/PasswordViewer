@@ -12,10 +12,12 @@ while(selectedChild.nodeName != 'INPUT')
 }
 
 var sA = selectedChild.attributes;
-
-if(!sA.type || sA.type.value == 'text')
+console.log(sA);
+console.log(selectedChild);
+//if(sA.type.value == 'text')
+if(!selectedChild.type ||selectedChild.type == 'text')
 {
-	sA.type = 'password';
+	selectedChild.type = 'password';
 	console.log('pass to text changed');
 	// dodać aby tylko input zaznaczony był zmieniany(zmienić tylko inputa który ma text z zaznaczonego)
 	// window.getSelection().anchorNode.data <-- można zmienić read/write text
