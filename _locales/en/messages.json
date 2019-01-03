@@ -1,0 +1,18 @@
+{
+	"description": {
+		"message": "This extension can change from hashed password like ***** to text",
+		"description": "This extension can change from hashed password like ***** to text"
+	},
+	"autoUnhash": {
+		"message": "Auto show password",
+		"description": "Auto show password"
+	},
+	"toText": {
+		"message": "Show password",
+		"description": "Show password"
+	},
+	"toPassword": {
+		"message": "Hide password",
+		"description": "Hide password"
+	}
+}

@@ -1,0 +1,18 @@
+{
+	"description": {
+		"message": "Zmienia z zahashowanego hasła, jak ***** na zwykły tekst",
+		"description": "Zmienia z zahashowanego hasła, jak ***** na zwykły tekst"
+	},
+	"autoUnhash": {
+		"message": "Automatycznie pokazuj hasła",
+		"description": "Automatycznie pokazuj hasła"
+	},
+	"toText": {
+		"message": "Pokaż hasło",
+		"description": "Pokaż hasło"
+	},
+	"toPassword": {
+		"message": "Ukryj hasło",
+		"description": "Ukryj hasło"
+	}
+}
